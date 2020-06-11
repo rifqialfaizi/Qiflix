@@ -14,6 +14,7 @@ class CategoryMovieCell: UITableViewCell {
     
     func updateViews(home:HomeModel) {
         
+        
     }
     
 }
