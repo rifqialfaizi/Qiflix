@@ -14,6 +14,8 @@ class HomeController: UITableViewController {
     
     @IBOutlet var homeTableView: UITableView!
     
+    private var categoryList = DataService().getHome()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -22,12 +24,13 @@ class HomeController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
-        return 0
+        return categoryList.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
+        let cell = UITableViewCell()
+        cell.textLabel?.text = categoryList[indexPath.row].title
+        return cell
     }
     
      override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

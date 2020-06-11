@@ -9,7 +9,7 @@
 import Foundation
 
 
-struct Home {
+struct HomeModel {
     
     private(set) public var title: String
 

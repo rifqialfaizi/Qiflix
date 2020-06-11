@@ -12,8 +12,7 @@ class CategoryMovieCell: UITableViewCell {
 
     @IBOutlet weak var homeLabel: UILabel!
     
-    
-    func updateViews(home:Home) {
+    func updateViews(home:HomeModel) {
         
     }
     

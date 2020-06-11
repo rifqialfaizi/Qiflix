@@ -11,15 +11,14 @@ import Foundation
 class DataService {
     
     private let home = [
-       
-        Model(title: "Popular Movies"),
-        Model(title: "Now Watching"),
-        Model(title: "Top Rated"),
-        Model(title: "Coming Soon")
+        HomeModel(title: "Popular Movies"),
+        HomeModel(title: "Now Watching"),
+        HomeModel(title: "Top Rated"),
+        HomeModel(title: "Coming Soon")
     ]
     
-    func getHome() -> [Model] {
-        return getHome()
+    func getHome() -> [HomeModel] {
+        return home
     }
     
 }
