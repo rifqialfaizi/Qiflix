@@ -7,13 +7,16 @@
 //
 
 import Foundation
+import UIKit
 
 
 struct HomeModel {
     
     private(set) public var title: String
+    private(set) public var image: String
 
-    init(title: String) {
+    init(title: String, image: String) {
         self.title = title
+        self.image = image
     }
 }
